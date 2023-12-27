@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Guitarra Virtual</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Notas de Guitarra</h1>
+  <button id="E">E</button>
+  <button id="A">A</button>
+  <button id="D">D</button>
+  <button id="G">G</button>
+  <button id="B">B</button>
+  <button id="E2">E</button>
+
+  <script>
+    // JavaScript para manejar la reproducción de notas
+    document.getElementById('E').addEventListener('click', () => playNote('E'));
+    document.getElementById('A').addEventListener('click', () => playNote('A'));
+    document.getElementById('D').addEventListener('click', () => playNote('D'));
+    document.getElementById('G').addEventListener('click', () => playNote('G'));
+    document.getElementById('B').addEventListener('click', () => playNote('B'));
+    document.getElementById('E2').addEventListener('click', () => playNote('E2'));
+
+    function playNote(note) {
+      // Simulación de la reproducción de la nota
+      console.log(`Sonando la nota ${note}`);
+      // Aquí podrías integrar la reproducción de sonidos reales
+    }
+  </script>
+</body>
+</html>
